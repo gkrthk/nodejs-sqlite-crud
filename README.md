@@ -11,3 +11,8 @@ $ node server.js
 ```
 
 It will be running on port 3000
+
+
+# Run Test Application
+In a new Terminal window run `node client.js`
+
