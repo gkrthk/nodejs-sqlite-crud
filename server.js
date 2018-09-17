@@ -184,9 +184,9 @@ function processData(res, sql, params) {
 function sendData(res, data) {
     res.setHeader("Access-Control-Allow-Origin", "*");
     if (data[0])
-        res.send(data);
+        res.status(200).send(data);
     else {
-        res.status(404).send("User not found");
+        res.status(200).send("collection empty");
     }
 }
 
